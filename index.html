@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CO APP</title>
+  <style>
+    :root {
+      --accent: #33C9FF;
+      --background: #16576F;
+      --highlight: #9FECFF;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--background);
+      color: white;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .preview-image {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 8px;
+      margin: 2rem auto 0;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .preview-image:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .link-card {
+      display: block;
+      background-color: var(--highlight);
+      padding: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      color: var(--background);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .link-card:hover {
+      transform: scale(1.02);
+      background-color: var(--accent);
+      color: white;
+    }
+
+    @media (min-width: 600px) {
+      .links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>CO APPLICATION – Portfolio Access</h1>
+    <p>Select a version of the portfolio to view or open the app:</p>
+
+    <div class="links">
+      <a href="your-portfolio.pdf" target="_blank" class="link-card">View/Download PDF Portfolio</a>
+      <a href="https://shorturl.at/MXV1H" target="_blank" class="link-card">View Figma Design</a>
+      <a href="website.html" target="_blank" class="link-card">Visit Live Website</a>
+      <a href="https://shorturl.at/aITuE" target="_blank" class="link-card">Open App</a>
+    </div>
+
+    <!-- Clickable image linking to full Figma page -->
+    <a href="https://shorturl.at/yHslH" target="_blank">
+      <img src="figma-preview.png" alt="Figma Preview" class="preview-image">
+    </a>
+  </main>
+</body>
+</html>
