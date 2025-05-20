@@ -5,6 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CO APP Leadership</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0f3c4f;
+      color: white;
+    }
+
+    header {
+      background-color: #093142;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #33C9FF;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cta-button {
+      background-color: #33C9FF;
+      color: #0f3c4f;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero iframe {
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      color: #9FECFF;
+      margin-bottom: 1rem;
+    }
+
+    .hero ol {
+      list-style: decimal inside;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+      font-size: 1.2rem;
+      line-height: 2;
+    }
+
+    .hero li {
+      background-color: rgba(255, 255, 255, 0.08);
+      margin: 0.5rem 0;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .hero li:hover {
+      transform: scale(1.03);
+      background-color: #33C9FF;
+      color: #0f3c4f;
+    }
+
+    /* Responsive Menu */
+    #menu-toggle {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .main-nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+
+      #menu-toggle:checked + .hamburger + .main-nav {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CO APP</title>
+  <title>CO APP – Final Project Summary</title>
   <style>
     :root {
       --accent: #33C9FF;
@@ -25,15 +25,49 @@
       text-align: center;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    h1, h2 {
       color: var(--accent);
+      margin-bottom: 1rem;
     }
 
     p {
       font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      text-align: left;
       margin-bottom: 2rem;
+    }
+
+    .link-card {
+      display: block;
+      background-color: var(--highlight);
+      padding: 1rem;
+      margin: 0.5rem auto;
+      max-width: 500px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      color: var(--background);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .link-card:hover {
+      transform: scale(1.02);
+      background-color: var(--accent);
+      color: white;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: underline;
+      color: var(--highlight);
     }
 
     .intro {
@@ -63,72 +97,105 @@
       box-shadow: 0 6px 12px rgba(0,0,0,0.4);
     }
 
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .link-card {
-      display: block;
-      background-color: var(--highlight);
-      padding: 1rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      color: var(--background);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
-    }
-
-    .link-card:hover {
-      transform: scale(1.02);
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
       background-color: var(--accent);
       color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 0.75rem 1rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: none;
+      transition: background-color 0.3s ease;
     }
 
-    @media (min-width: 600px) {
-      .links {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+    #backToTop:hover {
+      background-color: var(--highlight);
+      color: var(--background);
     }
   </style>
 </head>
 <body>
   <main class="container">
-    <h1>CO APPLICATION – Portfolio Access</h1>
+    <h1>CO APPLICATION – Final Project Summary</h1>
 
     <section class="intro">
-      <p><strong>Massive thanks to the legend herself – <a href="https://www.linkedin.com/in/lisatized/" target="_blank" style="color: var(--highlight); text-decoration: underline;">Professor Lisa</a>!</strong></p>
+      <p><strong>Massive thanks to the legend herself – 
+        <a href="https://www.linkedin.com/in/lisatized/" target="_blank" style="color: var(--highlight); text-decoration: underline;">Professor Lisa</a>!</strong></p>
       <p>Thank you so much for your time, guidance, and support in our Digital Interface Design class at DVC. Your help with Figma has truly helped me level up! I've learned valuable tricks and tools that improved both my design thinking and interface building.</p>
-      <p>This project, <strong>CO APP</strong>, is a conceptual youth-focused application designed to support creative programs—especially in dance and personal growth. Below, you’ll find multiple ways to explore the work: view the PDF portfolio, explore the Figma design, test the live HTML5 site, or even launch the prototype app.</p>
-      <p><em>Any feedback is appreciated—I'm always looking to improve!</em></p>
+      <p>This project, <strong>CO APP</strong>, is a conceptual youth-focused application designed to support creative programs, especially in dance and personal growth FOR REAL !!!</p>
+      <p><em>Any feedback is appreciated - I'm always looking to improve!</em></p>
     </section>
 
-    <p>Select a version of the portfolio to view or open the app:</p>
+    <h2> Project Overview</h2>
+    <p>The final deliverable is a high-fidelity mobile prototype designed for a non-profit/community platform. It demonstrates the visual and functional direction for an app that supports youth engagement, creativity, and connection through dance battles, workshops, and social resources.</p>
 
-    <div class="links">
-      <a href="coapp.pdf" target="_blank" class="link-card">View/Download PDF UX Research & Personas</a>
-      <a href="https://www.figma.com/proto/5GKwlv5R0UKmpbp7zldBWw/CO-URBAN-APP-FOR-YOUTH?node-id=519-492&p=f&t=OcPG6wYscm6SGEHF-1&scaling=contain&content-scaling=fixed&page-id=519%3A491" target="_blank" class="link-card">View Figma Web/Mobile Design</a>
-      <a href="website.html" target="_blank" class="link-card">Visit Live HTML Website</a>
-      <a href="https://www.figma.com/proto/5GKwlv5R0UKmpbp7zldBWw/CO-URBAN-APP-FOR-YOUTH?node-id=433-1442&t=qM5SlVAn86OzcMe2-1&scaling=scale-down&content-scaling=fixed&page-id=346%3A744&starting-point-node-id=433%3A757" target="_blank" class="link-card">Open App</a>
-      <a href="https://miro.com/app/board/uXjVIzHBTtc=/?share_link_id=880794691352" target="_blank" class="link-card">View Usability Report and Test (Miro)</a>
-    </div>
+    <h2> Core Features (3–5)</h2>
+    <ul>
+      <li><strong>Registration / Sign-up</strong> – onboarding users into the app</li>
+      <li><strong>Activity / Dance Battles</strong> – participate or spectate youth-driven challenges</li>
+      <li><strong>Calendar</strong> – track upcoming events, workshops, and programs</li>
+      <li><strong>Resource Center</strong> – guides, articles, and community materials</li>
+      <li><strong>About & Contact</strong> – info on the project and contact form</li>
+    </ul>
+
+    <h2> Main Feature</h2>
+    <p>The “Battle” section includes multiple pages that show how youth can create and join dance-based challenges with profiles and community feedback features. Flow is demonstrated in the prototype.</p>
+
+    <h2> Final Project Objectives</h2>
+    <ul>
+      <li>Applied design principles: color, type, hierarchy, layout</li>
+      <li>User-centered and inclusive interaction design</li>
+      <li>Mobile-first responsive interface</li>
+      <li>Demonstrated UX concepts via a clickable prototype</li>
+      <li>Frame sizes based on iPhone 13 screen specs</li>
+    </ul>
+
+  <h2> Portfolio Access</h2>
+  
+<a href="https://www.figma.com/proto/5GKwlv5R0UKmpbp7zldBWw/CO-URBAN-APP-FOR-YOUTH?node-id=433-1442&t=qM5SlVAn86OzcMe2-1&scaling=scale-down&content-scaling=fixed&page-id=346%3A744&starting-point-node-id=433%3A757" target="_blank" class="link-card" style="border: 2px solid white; font-size: 1.15rem; background-image: linear-gradient(45deg, var(--highlight), var(--accent)); color: var(--background);">
+Launch CO APP – Interactive Prototype
+</a>
+
+<a href="courban.pdf" target="_blank" class="link-card">Download PDF – CO APP Prototype</a>
+
+<a href="coapp.pdf" target="_blank" class="link-card">View/Download PDF UX Research & Personas</a>
+
+<a href="https://www.figma.com/proto/5GKwlv5R0UKmpbp7zldBWw/CO-URBAN-APP-FOR-YOUTH?node-id=519-492&p=f&t=OcPG6wYscm6SGEHF-1&scaling=contain&content-scaling=fixed&page-id=519%3A491" target="_blank" class="link-card">View Figma Web/Mobile Design</a>
+
+<a href="website.html" target="_blank" class="link-card">Visit Live HTML Website</a>
+
+<a href="https://miro.com/app/board/uXjVIzHBTtc=/?share_link_id=880794691352" target="_blank" class="link-card">View Usability Report and Test (Miro)</a>
+
+<a href="miro.pdf" target="_blank" class="link-card">Download PDF Usability Report (Miro)</a>
 
     <a href="https://shorturl.at/yHslH" target="_blank">
       <img src="figma-preview.png" alt="Figma Preview" class="preview-image">
     </a>
+
+    <p><a href="https://www.jayaproduction.com" target="_blank" class="back-link">← Back to JayaProduction.com</a></p>
   </main>
+
+  <button id="backToTop" title="Go to top">↑</button>
+
+  <script>
+ 
+ 
+    const topButton = document.getElementById("backToTop");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        topButton.style.display = "block";
+      } else {
+        topButton.style.display = "none";
+      }
+    };
+    topButton.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
 </body>
 </html>
-Let me know if you want to:
-
-Add icons to each link 🔗
-
-Animate the buttons 🌀
-
-Add a "Back to top" button or dark mode toggle 🌙
-
-Happy to help style or structure it further!
