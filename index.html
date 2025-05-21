@@ -117,6 +117,66 @@
       background-color: var(--highlight);
       color: var(--background);
     }
+
+
+.main-feature {
+  position: relative;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.05), transparent 70%);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 2rem;
+  margin: 3rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ffffff;
+  z-index: 1;
+  animation: floatIn 1.5s ease-in-out;
+}
+
+.main-feature::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(var(--accent), var(--highlight), var(--accent));
+  animation: rotateBackground 10s linear infinite;
+  opacity: 0.06;
+  z-index: 0;
+}
+
+@keyframes rotateBackground {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-feature strong {
+  color: var(--highlight);
+  font-weight: bold;
+}
+
+.main-feature em {
+  font-style: italic;
+  color: #ddd;
+}
+
   </style>
 </head>
 <body>
@@ -143,21 +203,24 @@
       <li><strong>About & Contact</strong> – info on the project and contact form</li>
     </ul>
 
-      <main class="container"></main>
+
 <h2>Main Feature</h2>
-    Hi, my name is Bulli Sot, and this app is a reflection of my younger self, trying to survive the streets of East Oakland by finding something free, creative, and powerful: dance.
+<section class="main-feature">
+  <p>Hi, my name is <strong>Bulli Sot</strong>, and this app is a reflection of my younger self, trying to survive the streets of East Oakland by finding something free, creative, and powerful: <strong>dance</strong>.</p>
 
-Back then, we didn’t have apps. We had word of mouth, tight-knit crews, and neighborhood parks. Dance wasn’t just a hobby. It was our outlet, our therapy, and our way to stay connected and stay alive. It brought the community together and gave us purpose when there weren’t many options around.
+  <p>Back then, we didn’t have apps. We had word of mouth, tight-knit crews, and neighborhood parks. Dance wasn’t just a hobby. It was our outlet, our therapy, and our way to stay connected and stay alive. It brought the community together and gave us purpose when there weren’t many options around.</p>
 
-Now we're in a different era, an era of technology. With this app, we can give that same community energy a digital home.
+  <p>Now we're in a different era, an era of technology. With this app, we can give that same community energy a digital home.</p>
 
-The Battle section lets youth, or anyone who loves to dance, create and join dance-based challenges, build profiles, and get real feedback from others. It’s a space to practice, express yourself, and discover local dance events you might not even know are happening right in your own backyard.
+  <p><strong>The Battle section</strong> lets youth, or anyone who loves to dance, create and join dance-based challenges, build profiles, and get real feedback from others. It’s a space to practice, express yourself, and discover local dance events you might not even know are happening right in your own backyard.</p>
 
-I believe this app has the potential to impact any community by inspiring freedom, creativity, and empowerment through the art of dance. Creativity is free. Use it. And remember:
+  <p>I believe this app has the potential to impact any community by inspiring freedom, creativity, and empowerment through the art of dance.</p>
 
-Don’t just do it...
-Feel it.
-</main>
+  <p><em>Creativity is free. Use it.</em></p>
+
+  <p><strong>Don’t just do it...<br/>Feel it.</strong></p>
+</section>
+
 
     <h2> Final Project Objectives</h2>
     <ul>
